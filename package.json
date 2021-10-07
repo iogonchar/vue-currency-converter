@@ -1,0 +1,40 @@
+{
+  "name": "vue-currency-converter",
+  "version": "1.0.0",
+  "description": "SPA для конвертирования валют",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot --open",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iogonchar/vue-currency-converter.git"
+  },
+  "author": "Ilya Gonchar <i.o.gonchar@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iogonchar/vue-currency-converter/issues"
+  },
+  "homepage": "https://github.com/iogonchar/vue-currency-converter#readme",
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
