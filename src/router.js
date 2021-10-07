@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import CurrencyConverter from './views/CurrencyConverter.vue';
 
 Vue.use(Router);
 
@@ -10,7 +9,14 @@ const router =  new Router({
     {
       path: '/',
       name: 'CurrencyConverter',
-      component: CurrencyConverter
+      meta: { layout: 'main-layout' },
+      component: () => import('./views/CurrencyConverter.vue')
+    },
+    {
+      path: '/exchange',
+      name: 'ExchangeRates',
+      meta: { layout: 'main-layout' },
+      component: () => import('./views/ExchangeRates.vue')
     },
   ]
 });
