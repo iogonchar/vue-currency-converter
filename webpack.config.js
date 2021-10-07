@@ -12,6 +12,9 @@ module.exports = {
     filename: '[name].[contenthash].js',
     path: path.join(__dirname, 'public')
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
